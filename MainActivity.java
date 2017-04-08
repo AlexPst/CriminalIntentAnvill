@@ -1,15 +1,23 @@
 package ru.alex_pst.criminalintentanvil;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.app.Activity;
 import android.app.FragmentManager;
 
-public class MainActivity extends AppCompatActivity {
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+public class MainActivity extends Activity {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_crime);
-        getFragmentManager().beginTransaction().add(R.id.fragment_crime, new CrimeFragment()).commit();
+        getFragmentManager().beginTransaction().add(R.id.fragment_activity, new CrimeFragment()).commit();
     }
+
+
+
 }
+
+

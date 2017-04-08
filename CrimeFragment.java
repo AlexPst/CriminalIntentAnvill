@@ -1,6 +1,5 @@
 package ru.alex_pst.criminalintentanvil;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,11 +10,8 @@ import android.widget.EditText;
 
 import java.util.UUID;
 
-import trikita.anvil.DSL;
 import trikita.anvil.RenderableView;
 
-import static android.R.interpolator.linear;
-import static trikita.anvil.BaseDSL.FILL;
 import static trikita.anvil.BaseDSL.MATCH;
 import static trikita.anvil.BaseDSL.WRAP;
 import static trikita.anvil.BaseDSL.dip;
@@ -26,7 +22,6 @@ import static trikita.anvil.DSL.button;
 import static trikita.anvil.DSL.checkBox;
 import static trikita.anvil.DSL.editText;
 import static trikita.anvil.DSL.hint;
-import static trikita.anvil.DSL.id;
 import static trikita.anvil.DSL.linearLayout;
 import static trikita.anvil.DSL.textView;
 
@@ -34,7 +29,7 @@ import static trikita.anvil.DSL.textView;
  * Created by Alex_ on 01.04.2017.
  */
 
-public class CrimeFragment extends Fragment{
+public class CrimeFragment extends android.support.v4.app.Fragment {
     public static final String EXTRA_CRIME_ID = "criminal.CRIME_ID";
 
     Crime mCrime;

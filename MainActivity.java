@@ -9,7 +9,7 @@ import android.app.FragmentManager;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_crime);
